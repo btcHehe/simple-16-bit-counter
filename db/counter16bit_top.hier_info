@@ -5,16 +5,15 @@ cathode_sel[0] <= demux:demux.sel_out[0]
 cathode_sel[1] <= demux:demux.sel_out[1]
 cathode_sel[2] <= demux:demux.sel_out[2]
 cathode_sel[3] <= demux:demux.sel_out[3]
-RST => counter_2_bit:cnt2.rst
-RST => counter_16_bit:16bitcounter.rst
 CLK => pll:pll.inclk0
-sel_out[0] <= mux4:mux4.result[0]
-sel_out[1] <= mux4:mux4.result[1]
-sel_out[2] <= mux4:mux4.result[2]
-sel_out[3] <= mux4:mux4.result[3]
-sel_out[4] <= mux4:mux4.result[4]
-sel_out[5] <= mux4:mux4.result[5]
-sel_out[6] <= mux4:mux4.result[6]
+sel_out[0] <= mux4:inst7.result[0]
+sel_out[1] <= mux4:inst7.result[1]
+sel_out[2] <= mux4:inst7.result[2]
+sel_out[3] <= mux4:inst7.result[3]
+sel_out[4] <= mux4:inst7.result[4]
+sel_out[5] <= mux4:inst7.result[5]
+sel_out[6] <= mux4:inst7.result[6]
+RST => counter_16_bit:16bitcounter.rst
 
 
 |counter16bit_top|const0:inst
@@ -40,9 +39,7 @@ sel_out[2] <= sel_out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 sel_out[3] <= sel_out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|counter16bit_top|counter_2_bit:cnt2
-rst => state_var[0].ACLR
-rst => state_var[1].ACLR
+|counter16bit_top|counter_2_bit:inst8
 clk => state_var[0].CLK
 clk => state_var[1].CLK
 state_out[0] <= state_var[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -200,7 +197,7 @@ inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
 
 
-|counter16bit_top|mux4:mux4
+|counter16bit_top|mux4:inst7
 data0x[0] => sub_wire2[0].IN1
 data0x[1] => sub_wire2[1].IN1
 data0x[2] => sub_wire2[2].IN1
@@ -240,7 +237,7 @@ result[5] <= lpm_mux:LPM_MUX_component.result
 result[6] <= lpm_mux:LPM_MUX_component.result
 
 
-|counter16bit_top|mux4:mux4|lpm_mux:LPM_MUX_component
+|counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component
 data[0][0] => mux_66c:auto_generated.data[0]
 data[0][1] => mux_66c:auto_generated.data[1]
 data[0][2] => mux_66c:auto_generated.data[2]
@@ -283,7 +280,7 @@ result[5] <= mux_66c:auto_generated.result[5]
 result[6] <= mux_66c:auto_generated.result[6]
 
 
-|counter16bit_top|mux4:mux4|lpm_mux:LPM_MUX_component|mux_66c:auto_generated
+|counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component|mux_66c:auto_generated
 data[0] => _.IN0
 data[0] => _.IN0
 data[1] => _.IN0

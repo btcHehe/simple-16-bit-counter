@@ -1,5 +1,5 @@
 Flow report for counter16bit_top
-Thu Apr 28 23:39:48 2022
+Thu Apr 28 23:46:36 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 28 23:39:48 2022       ;
+; Flow Status                        ; Successful - Thu Apr 28 23:46:36 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; counter16bit_top                            ;
 ; Top-level Entity Name              ; counter16bit_top                            ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/28/2022 23:39:20 ;
+; Start date & time ; 04/28/2022 23:46:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; counter16bit_top    ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 84440835577013.165118196045087         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 84440835577013.165118236846584         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; MISC_FILE                           ; mux4.bsf                               ; --            ; --          ; --                                ;
-; MISC_FILE                           ; mux4_bb.v                              ; --            ; --          ; --                                ;
+; MISC_FILE                           ; mux4.cmp                               ; --            ; --          ; --                                ;
 ; MISC_FILE                           ; pll.bsf                                ; --            ; --          ; --                                ;
 ; MISC_FILE                           ; pll.cmp                                ; --            ; --          ; --                                ;
 ; MISC_FILE                           ; pll.ppf                                ; --            ; --          ; --                                ;
@@ -112,12 +112,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 442 MB              ; 00:00:20                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 1036 MB             ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 444 MB              ; 00:00:19                           ;
+; Fitter               ; 00:00:05     ; 1.1                     ; 1029 MB             ; 00:00:05                           ;
 ; Assembler            ; 00:00:01     ; 1.0                     ; 364 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 494 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 609 MB              ; 00:00:00                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:28                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 497 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 608 MB              ; 00:00:00                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

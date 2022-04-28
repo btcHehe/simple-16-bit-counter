@@ -1,5 +1,5 @@
 Assembler report for counter16bit_top
-Thu Apr 28 23:39:44 2022
+Thu Apr 28 23:46:31 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 28 23:39:44 2022 ;
+; Assembler Status      ; Successful - Thu Apr 28 23:46:31 2022 ;
 ; Revision Name         ; counter16bit_top                      ;
 ; Top-level Entity Name ; counter16bit_top                      ;
 ; Family                ; MAX 10                                ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-------------------------------+
 ; Option         ; Setting                       ;
 +----------------+-------------------------------+
-; JTAG usercode  ; 0x000876A5                    ;
-; Checksum       ; 0x000876A5                    ;
+; JTAG usercode  ; 0x00087451                    ;
+; Checksum       ; 0x00087451                    ;
 +----------------+-------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Apr 28 23:39:43 2022
+    Info: Processing started: Thu Apr 28 23:46:30 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off counter16bit -c counter16bit_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Thu Apr 28 23:39:44 2022
+    Info: Processing ended: Thu Apr 28 23:46:31 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

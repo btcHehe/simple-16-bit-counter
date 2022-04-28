@@ -1,0 +1,13 @@
+
+
+/home/btc/embedded/fpga/counter16bit/mux4.vhd
+
+Apr 28 11PM:43:07>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+mux4.v
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
