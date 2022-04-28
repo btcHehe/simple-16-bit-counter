@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cathode_sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cathode_sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cathode_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cathode_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
