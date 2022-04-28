@@ -1,5 +1,5 @@
 Analysis & Synthesis report for counter16bit_top
-Thu Apr 28 23:46:22 2022
+Thu Apr 28 23:52:06 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  10. Parameter Settings for User Entity Instance: const0:inst|lpm_constant:LPM_CONSTANT_component
  11. Parameter Settings for User Entity Instance: pll2:pll2|altpll:altpll_component
  12. Parameter Settings for User Entity Instance: pll:pll|altpll:altpll_component
- 13. Parameter Settings for User Entity Instance: mux4:inst7|lpm_mux:LPM_MUX_component
+ 13. Parameter Settings for User Entity Instance: mux4:inst1|LPM_MUX:LPM_MUX_component
  14. altpll Parameter Settings by Entity Instance
  15. Post-Synthesis Netlist Statistics for Top Partition
  16. Elapsed Time Per Partition
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 28 23:46:22 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 28 23:52:06 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; counter16bit_top                            ;
 ; Top-level Entity Name              ; counter16bit_top                            ;
@@ -180,6 +180,7 @@ https://fpgasoftware.intel.com/eula.
 ; 16_bit_counter.vhd               ; yes             ; User VHDL File                     ; /home/btc/embedded/fpga/counter16bit/16_bit_counter.vhd                         ;         ;
 ; counter16bit_top.bdf             ; yes             ; User Block Diagram/Schematic File  ; /home/btc/embedded/fpga/counter16bit/counter16bit_top.bdf                       ;         ;
 ; bin_to_7seg_decoder.vhd          ; yes             ; User VHDL File                     ; /home/btc/embedded/fpga/counter16bit/bin_to_7seg_decoder.vhd                    ;         ;
+; mux4.vhd                         ; yes             ; User Wizard-Generated File         ; /home/btc/embedded/fpga/counter16bit/mux4.vhd                                   ;         ;
 ; pll.vhd                          ; yes             ; User Wizard-Generated File         ; /home/btc/embedded/fpga/counter16bit/pll.vhd                                    ;         ;
 ; 2_bit_counter.vhd                ; yes             ; User VHDL File                     ; /home/btc/embedded/fpga/counter16bit/2_bit_counter.vhd                          ;         ;
 ; demux4.vhd                       ; yes             ; User VHDL File                     ; /home/btc/embedded/fpga/counter16bit/demux4.vhd                                 ;         ;
@@ -194,12 +195,11 @@ https://fpgasoftware.intel.com/eula.
 ; cycloneii_pll.inc                ; yes             ; Megafunction                       ; /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
 ; db/pll2_altpll.v                 ; yes             ; Auto-Generated Megafunction        ; /home/btc/embedded/fpga/counter16bit/db/pll2_altpll.v                           ;         ;
 ; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction        ; /home/btc/embedded/fpga/counter16bit/db/pll_altpll.v                            ;         ;
-; mux4.v                           ; yes             ; Auto-Found Wizard-Generated File   ; /home/btc/embedded/fpga/counter16bit/mux4.v                                     ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf       ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                       ; /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/muxlut.inc        ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                       ; /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/bypassff.inc      ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                       ; /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/altshift.inc      ;         ;
-; db/mux_66c.tdf                   ; yes             ; Auto-Generated Megafunction        ; /home/btc/embedded/fpga/counter16bit/db/mux_66c.tdf                             ;         ;
+; db/mux_hid.tdf                   ; yes             ; Auto-Generated Megafunction        ; /home/btc/embedded/fpga/counter16bit/db/mux_hid.tdf                             ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
@@ -251,9 +251,9 @@ https://fpgasoftware.intel.com/eula.
 ;    |decoder7seg:LH|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|decoder7seg:LH                                               ; decoder7seg      ; work         ;
 ;    |decoder7seg:LL|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|decoder7seg:LL                                               ; decoder7seg      ; work         ;
 ;    |demux:demux|                      ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|demux:demux                                                  ; demux            ; work         ;
-;    |mux4:inst7|                       ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst7                                                   ; mux4             ; work         ;
-;       |lpm_mux:LPM_MUX_component|     ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component                         ; lpm_mux          ; work         ;
-;          |mux_66c:auto_generated|     ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component|mux_66c:auto_generated  ; mux_66c          ; work         ;
+;    |mux4:inst1|                       ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst1                                                   ; mux4             ; work         ;
+;       |lpm_mux:LPM_MUX_component|     ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst1|lpm_mux:LPM_MUX_component                         ; lpm_mux          ; work         ;
+;          |mux_hid:auto_generated|     ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|mux4:inst1|lpm_mux:LPM_MUX_component|mux_hid:auto_generated  ; mux_hid          ; work         ;
 ;    |pll2:pll2|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|pll2:pll2                                                    ; pll2             ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|pll2:pll2|altpll:altpll_component                            ; altpll           ; work         ;
 ;          |pll2_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |counter16bit_top|pll2:pll2|altpll:altpll_component|pll2_altpll:auto_generated ; pll2_altpll      ; work         ;
@@ -270,6 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance               ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
 ; Altera ; LPM_CONSTANT ; 21.1    ; N/A          ; N/A          ; |counter16bit_top|const0:inst ; const0.vhd      ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |counter16bit_top|mux4:inst1  ; mux4.vhd        ;
 ; Altera ; ALTPLL       ; 21.1    ; N/A          ; N/A          ; |counter16bit_top|pll:pll     ; pll.vhd         ;
 ; Altera ; ALTPLL       ; 21.1    ; N/A          ; N/A          ; |counter16bit_top|pll2:pll2   ; pll2.vhd        ;
 +--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
@@ -1052,7 +1053,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux4:inst7|lpm_mux:LPM_MUX_component ;
+; Parameter Settings for User Entity Instance: mux4:inst1|LPM_MUX:LPM_MUX_component ;
 +------------------------+---------+------------------------------------------------+
 ; Parameter Name         ; Value   ; Type                                           ;
 +------------------------+---------+------------------------------------------------+
@@ -1063,8 +1064,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_WIDTH              ; 7       ; Signed Integer                                 ;
 ; LPM_SIZE               ; 4       ; Signed Integer                                 ;
 ; LPM_WIDTHS             ; 2       ; Signed Integer                                 ;
-; LPM_PIPELINE           ; 0       ; Untyped                                        ;
-; CBXI_PARAMETER         ; mux_66c ; Untyped                                        ;
+; LPM_PIPELINE           ; 0       ; Signed Integer                                 ;
+; CBXI_PARAMETER         ; mux_hid ; Untyped                                        ;
 ; DEVICE_FAMILY          ; MAX 10  ; Untyped                                        ;
 +------------------------+---------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1136,7 +1137,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Apr 28 23:46:08 2022
+    Info: Processing started: Thu Apr 28 23:51:50 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter16bit -c counter16bit_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1148,7 +1149,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
 Info (12021): Found 2 design units, including 1 entities, in source file bin_to_7seg_decoder.vhd
     Info (12022): Found design unit 1: decoder7seg-behv File: /home/btc/embedded/fpga/counter16bit/bin_to_7seg_decoder.vhd Line: 9
     Info (12023): Found entity 1: decoder7seg File: /home/btc/embedded/fpga/counter16bit/bin_to_7seg_decoder.vhd Line: 4
-Warning (12019): Can't analyze file -- file mux4.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file mux4.vhd
+    Info (12022): Found design unit 1: mux4-SYN File: /home/btc/embedded/fpga/counter16bit/mux4.vhd Line: 56
+    Info (12023): Found entity 1: mux4 File: /home/btc/embedded/fpga/counter16bit/mux4.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
     Info (12022): Found design unit 1: pll-SYN File: /home/btc/embedded/fpga/counter16bit/pll.vhd Line: 52
     Info (12023): Found entity 1: pll File: /home/btc/embedded/fpga/counter16bit/pll.vhd Line: 43
@@ -1309,19 +1312,19 @@ Info (12133): Instantiated megafunction "pll:pll|altpll:altpll_component" with t
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
     Info (12023): Found entity 1: pll_altpll File: /home/btc/embedded/fpga/counter16bit/db/pll_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll|altpll:altpll_component|pll_altpll:auto_generated" File: /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Warning (12125): Using design file mux4.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: mux4 File: /home/btc/embedded/fpga/counter16bit/mux4.v Line: 40
-Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst7"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux4:inst7|lpm_mux:LPM_MUX_component" File: /home/btc/embedded/fpga/counter16bit/mux4.v Line: 73
-Info (12130): Elaborated megafunction instantiation "mux4:inst7|lpm_mux:LPM_MUX_component" File: /home/btc/embedded/fpga/counter16bit/mux4.v Line: 73
-Info (12133): Instantiated megafunction "mux4:inst7|lpm_mux:LPM_MUX_component" with the following parameter: File: /home/btc/embedded/fpga/counter16bit/mux4.v Line: 73
-    Info (12134): Parameter "lpm_size" = "4"
-    Info (12134): Parameter "lpm_type" = "LPM_MUX"
-    Info (12134): Parameter "lpm_width" = "7"
-    Info (12134): Parameter "lpm_widths" = "2"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_66c.tdf
-    Info (12023): Found entity 1: mux_66c File: /home/btc/embedded/fpga/counter16bit/db/mux_66c.tdf Line: 23
-Info (12128): Elaborating entity "mux_66c" for hierarchy "mux4:inst7|lpm_mux:LPM_MUX_component|mux_66c:auto_generated" File: /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst1"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux4:inst1|LPM_MUX:LPM_MUX_component" File: /home/btc/embedded/fpga/counter16bit/mux4.vhd Line: 102
+Info (12130): Elaborated megafunction instantiation "mux4:inst1|LPM_MUX:LPM_MUX_component" File: /home/btc/embedded/fpga/counter16bit/mux4.vhd Line: 102
+Info (12133): Instantiated megafunction "mux4:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: /home/btc/embedded/fpga/counter16bit/mux4.vhd Line: 102
+    Info (12134): Parameter "LPM_WIDTH" = "7"
+    Info (12134): Parameter "LPM_SIZE" = "4"
+    Info (12134): Parameter "LPM_WIDTHS" = "2"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hid.tdf
+    Info (12023): Found entity 1: mux_hid File: /home/btc/embedded/fpga/counter16bit/db/mux_hid.tdf Line: 23
+Info (12128): Elaborating entity "mux_hid" for hierarchy "mux4:inst1|LPM_MUX:LPM_MUX_component|mux_hid:auto_generated" File: /home/btc/intelFPGA_lite/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "decoder7seg" for hierarchy "decoder7seg:HH"
 Warning (10631): VHDL Process Statement warning at bin_to_7seg_decoder.vhd(11): inferring latch(es) for signal or variable "dec_out", which holds its previous value in one or more paths through the process File: /home/btc/embedded/fpga/counter16bit/bin_to_7seg_decoder.vhd Line: 11
 Info (10041): Inferred latch for "dec_out[0]" at bin_to_7seg_decoder.vhd(11) File: /home/btc/embedded/fpga/counter16bit/bin_to_7seg_decoder.vhd Line: 11
@@ -1344,10 +1347,10 @@ Info (21057): Implemented 83 device resources after synthesis - the final resour
     Info (21059): Implemented 13 output pins
     Info (21061): Implemented 66 logic cells
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 446 megabytes
-    Info: Processing ended: Thu Apr 28 23:46:22 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 470 megabytes
+    Info: Processing ended: Thu Apr 28 23:52:06 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:21
 
 

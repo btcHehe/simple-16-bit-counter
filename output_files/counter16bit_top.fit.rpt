@@ -1,5 +1,5 @@
 Fitter report for counter16bit_top
-Thu Apr 28 23:46:28 2022
+Thu Apr 28 23:52:13 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 28 23:46:28 2022       ;
+; Fitter Status                      ; Successful - Thu Apr 28 23:52:13 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; counter16bit_top                            ;
 ; Top-level Entity Name              ; counter16bit_top                            ;
@@ -156,13 +156,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
+; Average used               ; 1.08        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.5%      ;
-;     Processors 3-4         ;   2.5%      ;
+;     Processor 2            ;   2.7%      ;
+;     Processors 3-4         ;   2.7%      ;
 +----------------------------+-------------+
 
 
@@ -753,9 +753,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |decoder7seg:LH|                   ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|decoder7seg:LH                                               ; decoder7seg      ; work         ;
 ;    |decoder7seg:LL|                   ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|decoder7seg:LL                                               ; decoder7seg      ; work         ;
 ;    |demux:demux|                      ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|demux:demux                                                  ; demux            ; work         ;
-;    |mux4:inst7|                       ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst7                                                   ; mux4             ; work         ;
-;       |lpm_mux:LPM_MUX_component|     ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component                         ; lpm_mux          ; work         ;
-;          |mux_66c:auto_generated|     ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst7|lpm_mux:LPM_MUX_component|mux_66c:auto_generated  ; mux_66c          ; work         ;
+;    |mux4:inst1|                       ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst1                                                   ; mux4             ; work         ;
+;       |lpm_mux:LPM_MUX_component|     ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst1|lpm_mux:LPM_MUX_component                         ; lpm_mux          ; work         ;
+;          |mux_hid:auto_generated|     ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|mux4:inst1|lpm_mux:LPM_MUX_component|mux_hid:auto_generated  ; mux_hid          ; work         ;
 ;    |pll2:pll2|                        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|pll2:pll2                                                    ; pll2             ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|pll2:pll2|altpll:altpll_component                            ; altpll           ; work         ;
 ;          |pll2_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |counter16bit_top|pll2:pll2|altpll:altpll_component|pll2_altpll:auto_generated ; pll2_altpll      ; work         ;
@@ -1210,7 +1210,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1218,10 +1218,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/btc/embedded/fpga/counter16bit/output_files/counter16bit_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 1029 megabytes
-    Info: Processing ended: Thu Apr 28 23:46:29 2022
+    Info: Peak virtual memory: 1030 megabytes
+    Info: Processing ended: Thu Apr 28 23:52:13 2022
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
