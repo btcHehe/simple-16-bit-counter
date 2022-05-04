@@ -5,12 +5,19 @@ Counter's state is displayed in 7 segment display. 4 displays are connected in p
 
 
 ## 7 segment display diode names
-	  a
-	 ---
-  f	| g	| b
-	 ---
-  e |   | c
-	 ---
-	  d
 
+```
+     a
+    ---
+  f| g	| b
+    ---
+  e|   | c
+    ---
+     d
+```
 ## Working example
+![16bit_counter](https://user-images.githubusercontent.com/46330318/166671210-a0414f57-e006-47f3-9fd1-042cc774049e.jpg)
+
+
+https://user-images.githubusercontent.com/46330318/166671331-f8b8b205-925c-4ba7-b1c6-9aab8b0bcc06.mp4
+
